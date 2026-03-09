@@ -1,6 +1,4 @@
-import { contactSchemaProp } from "@/next-env";
 import mongoose from "mongoose";
-
 const contactSchema = new mongoose.Schema<contactSchemaProp>(
   {
     name: {
@@ -30,6 +28,7 @@ const contactSchema = new mongoose.Schema<contactSchemaProp>(
       type: String,
       required: true,
       enum: ["new", "read", "replied"],
+      default: "new"
     },
   },
   { timestamps: true },
