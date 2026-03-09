@@ -6,10 +6,10 @@ if (!MONGO_URI) {
   console.log("Define the Mongo ulr in environment variable ");
 }
 
-let cache = global.mongoose;
+let cache = globalThis.mongoose;
 
 if (!cache) {
-  cache = global.mongoose = { conn: null, promise: null };
+  cache = globalThis.mongoose = { conn: null, promise: null };
 }
 
 async function dbConnection() {
