@@ -10,7 +10,7 @@ interface FormProp {
   email: string;
   subject: string;
   message: string;
-  status: string; 
+  status: string;  
 }
 interface ContactGetProp {
   _id: string;
