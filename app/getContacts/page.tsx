@@ -5,7 +5,7 @@ import {
   CardContent,
   CardHeader,
   CardTitle,
-} from "../../components/ui/card";
+} from "../../components/ui/card"; 
 import ContactStats from "../../components/ContactStatsitics";
 import Link from "next/link";
 // import { revalidatePath } from "next/cache";
